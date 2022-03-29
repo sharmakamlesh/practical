@@ -1,13 +1,153 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 1em 2em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h5 {
+  padding: 1em 0;
+  font-size: 1.3em;
+  color: #007bff;
+}
+
+p {
+  font-size: 1em;
+}
+
+label {
+  font-size: 14px;
+}
+
+form {
+  margin: 2em 0;
+}
+
+form textarea {
+  width: 100%;
+  margin: .5em 0 0 0;
+  outline: none;
+  padding: .5em;
+}
+
+.form-group.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.form-group.flex-col {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  margin: 1em 0;
+}
+
+.form-group.flex-col .flex{
+  display: flex;
+  gap: 2em;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-group.flex-col .flex-column{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group.flex-col .flex-column .radio-group{
+  justify-content: flex-start;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  padding: 0 2em 0 0;
+}
+
+
+
+.radio-group input,
+.radio-group label{
+  cursor: pointer;
+}
+
+.break-line {
+  border-top: 1px solid grey;
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin: 3.5em 0;
+}
+
+.btn-wrapper {
+  display: flex;
+  padding: 1.5em 0;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.expError {
+  color: red;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-header h1 {
+  font-size: 1.5em;
+  color: #007bff;
+}
+
+table thead th {
+  font-weight: bold !important;
+  font-size: 14px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-not-found {
+  height: 90vh;
+  display: grid;
+  place-items: center;
 }
